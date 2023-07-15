@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Корзина</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230715153053">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top">
+				<div class="header__container">
+					<a href="index.html" class="header__logo">
+						<picture><source srcset="img/common/logo.webp" type="image/webp"><img src="img/common/logo.png" alt="Логотип"></picture>
+					</a>
+					<div class="header__location" data-popup="#popup-city" data-da=".menu__list, 767.98, 20">
+						<i class="_icon-location"></i>
+						<span class="user-city">Алматы</span>
+						<p>Изменить</p>
+					</div>
+					<div class="header__search search-header">
+						<div class="search-header__input input-search">
+							<input autocomplete="off" type="text" name="search" data-dont-remember data-error="Ошибка" placeholder="" data-out-placeholder=".search-header__placeholder p" class="input">
+							<div class="search-header__placeholder placeholder-search">
+								<p>Поиск <span>по товарам</span></p><i class="_icon-search"></i>
+							</div>
+						</div>
+					</div>
+					<div class="header__actions actions">
+						<a href="account.html" class="actions__column actions__column_user">
+							<div class="actions__icon">
+								<i class="_icon-user"></i>
+							</div>
+							<span class="actions__title">Аккаунт</span>
+						</a>
+						<a href="favorite.html" class="actions__column">
+							<div class="actions__icon">
+								<i class="_icon-favorite"></i>
+								<span class="actions__label favorite-quant"></span>
+							</div>
+							<span class="actions__title">Избранное</span>
+						</a>
+						<a href="cart.html" class="actions__column">
+							<div class="actions__icon">
+								<i class="_icon-cart"></i>
+								<span class="actions__label cart-quant"></span>
+							</div>
+							<span class="actions__title">Корзина</span>
+						</a>
+						<a href="#" class="actions__column actions__column_mobile actions__column_menu">
+							<div class="actions__icon">
+								<i class="_icon-catalog"></i>
+							</div>
+							<span class="actions__title">Каталог</span>
+						</a>
+						<a href="index.html" class="actions__column actions__column_mobile">
+							<div class="actions__icon">
+								<i class="_icon-home"></i>
+							</div>
+							<span class="actions__title">Главная</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu menu">
+				<div class="header__container">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item menu__item_mobile">
+								<a href="index.html" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="category.html" class="menu__link">Ковры</a>
+							</li>
+							<li class="menu__item">
+								<a href="category.html" class="menu__link">Коврики</a>
+							</li>
+							<li class="menu__item">
+								<a href="category.html" class="menu__link">Для ванной</a>
+							</li>
+							<li class="menu__item">
+								<a href="category.html" class="menu__link">Дорожки</a>
+							</li>
+							<li class="menu__item">
+								<a href="category.html" class="menu__link">Особенные ковры</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Центр поддержки</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Контакты</a>
+							</li>
+							<li class="menu__item menu__item_mobile">
+								<a href="auth.html" class="menu__link">Вход / Регистрация</a>
+							</li>
+							<button class="menu__icon icon-menu" type="button"><span></span></button>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="page cart cart_empty">
+			<div class="cart__container">
+				<div class="__container">
+					<div class="cart__breadcrumbs breadcrumbs">
+						<a href="index.html" class="breadcrumbs__link link">Главная</a>
+						<span>/</span>
+						<a href="index.html" class="breadcrumbs__link-current link">
+							<i class="_icon-arrow"></i>Корзина</a>
+					</div>
+				</div>
+				<div class="cart__body cart__body_not-empty">
+					<div class="__container">
+						<h1 class="cart__title title">
+							Корзина<span class="cart-quant"></span>
+						</h1>
+					</div>
+					<div class="cart__content">
+						<div class="cart__main main-cart">
+							<table class="main-cart__table">
+								<thead>
+									<tr>
+										<td></td>
+										<td>Название товара</td>
+										<td>Цена за шт.</td>
+										<td>Кол-во</td>
+										<td>Итог</td>
+										<td></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="main-cart__product product-cart">
+										<td class="product-cart__imageblock-td">
+											<div class="product-cart__imageblock">
+												<a href="product.html" class="link-product-img">
+													<picture><source srcset="img/products/02/01.webp" type="image/webp"><img src="img/products/02/01.jpg" alt="Фото товара"></picture>
+												</a>
+											</div>
+										</td>
+										<td class="product-cart__name-td">
+											<div data-da=".mobile-product, 991.98">
+												<a href="product.html" class="product-cart__name link-product-name">Elexus Semerkant 1763
+													Coken Orta Beige</a>
+												<div class="product-cart__characteristics">
+													<div class="product-cart__charasteristic">Код товара: BAL733</div>
+													<div class="product-cart__charasteristic">Размер 160x230 см</div>
+												</div>
+												<div class="product-cart__installment">
+													<span>Частями по 13.333</span>
+													<i class="_icon-tenge"></i>
+													<span>/ мес</span>
+												</div>
+											</div>
+										</td>
+										<td>
+											<p class="product-cart__price">
+												<span>163.000</span>
+												<i class="_icon-tenge"></i>
+											</p>
+										</td>
+										<td>
+											<div class="quantity" data-da=".mobile-product, 991.98">
+												<button type="button" class="quantity__button quantity__button_minus spoller-icon"></button>
+												<div class="quantity__input product-cart__quantity-input from__input">
+													<input autocomplete="off" type="text" name="form[]" oninput="this.value = this.value.replace(/[^\d]/g,'');" value="1">
+												</div>
+												<button type="button" class="quantity__button quantity__button_plus spoller-icon"></button>
+												<span class="quantity__postfix">шт</span>
+											</div>
+										</td>
+										<td>
+											<p class="product-cart__total" data-da=".mobile-product__header, 991.98">
+												<span></span>
+												<i class="_icon-tenge"></i>
+											</p>
+										</td>
+										<td class="product-cart__actions-td">
+											<div class="product-cart__actions actions-product-cart" data-da=".mobile-product__header, 991.98">
+												<button class="actions-product-cart__item">
+													<i class="_icon-trash"></i>
+												</button>
+												<button class="actions-product-cart__item favorite-icon favorite-product">
+													<i class="_icon-favorite2"></i>
+												</button>
+											</div>
+										</td>
+										<td class="product-cart__mobile mobile-product">
+											<div class="mobile-product__header"></div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="main-cart__total">
+								Итого: <span></span><i class="_icon-tenge"></i>
+							</div>
+							<div class="main-cart__actions">
+								<a href="payment.html" class="main-cart__button button main-cart__button_placing">Перейти к
+									оформлению</a>
+								<button type="submit" class="main-cart__button button-installment">Купить в
+									рассрочку</button>
+							</div>
+							<div class="main-cart__delivery delivery-cart">
+								<div class="delivery-cart__left">
+									<p>Доставка от Bayan Sulu</p>
+								</div>
+								<div class="delivery-cart__right">
+									<div class="delivery-cart__item">
+										<i class="_icon-delivery"></i>
+										<span>Курьером</span>
+									</div>
+									<div class="delivery-cart__item">
+										<i class="_icon-location"></i>
+										<span>Самовывоз</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="__container">
+							<div class="cart__other-products other-products">
+								<div class="other-products__header">
+									<div class="other-products__title title">Рекомендуем</div>
+									<div class="other-products__navigation navigation-slider">
+										<div class="navigation-slider__button navigation-slider__button_prev">
+											<i class="_icon-arrow"></i>
+										</div>
+										<div class="navigation-slider__button navigation-slider__button_next">
+											<i class="_icon-arrow"></i>
+										</div>
+									</div>
+								</div>
+								<div class="other-products__slider swiper">
+									<div class="other-products__wrapper swiper-wrapper">
+										<div class="other-products__slide swiper-slide">
+											<div class="product">
+												<div class="product__top">
+													<div class="product__label label-product"><span>Новинка</span></div>
+													<div class="product__favorite favorite-product favorite-icon"><i class="_icon-favorite2"></i></div>
+												</div>
+												<div class="product__image">
+													<a href="product.html" class="link-product-img">
+														<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="Ковёр"></picture>
+													</a>
+												</div>
+												<div class="product__content">
+													<div class="product__name">
+														<a href="product.html" class="link-product-name">Aster Q893A LVIZON LVIZON</a>
+													</div>
+													<div class="product__characteristics characteristics-product">
+														<div class="characteristics-product__line">
+															<div class="characteristics-product__title">Размер:</div>
+															<div class="characteristics-product__subtitle">60x100</div>
+														</div>
+														<div class="characteristics-product__line">
+															<div class="characteristics-product__title">Производитель:</div>
+															<div class="characteristics-product__subtitle">Казахстан</div>
+														</div>
+													</div>
+													<div class="product__reviews reviews-product">
+														<div class="reviews-product__stars rating">
+															<div class="rating__body">
+																<div class="rating__active"></div>
+															</div>
+															<div class="rating__value">0</div>
+														</div>
+														<div class="reviews-product__text text-reviews">
+															<span class="text-reviews__quantity">0</span>
+															<span class="text-reviews__text">Отзывов</span>
+														</div>
+													</div>
+													<div class="product__prices">
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Цена</span></div>
+															<div class="price-product__item price-product__item_price"><span>160.000</span><i class="_icon-tenge"></i></div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>В рассрочку</span></div>
+															<div class="price-product__installment installment-price-product">
+																<div class="price-product__item price-product__item_installment installment-price-product__price">
+																	<span>13.333</span><i class="_icon-tenge"></i>
+																</div>
+																<div class="installment-price-product__time">
+																	<span>x </span><span>12 мес</span>
+																</div>
+															</div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Старая цена</span></div>
+															<div class="price-product__item price-product__item_price-old"><span></span><i class="_icon-tenge"></i></div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Новая цена</span></div>
+															<div class="price-product__item price-product__item_price-new"><span></span><i class="_icon-tenge"></i></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="other-products__slide swiper-slide">
+											<div class="product">
+												<div class="product__top">
+													<div class="product__label label-product"><span>Новинка</span></div>
+													<div class="product__favorite favorite-product favorite-icon"><i class="_icon-favorite2"></i></div>
+												</div>
+												<div class="product__image">
+													<a href="product.html" class="link-product-img">
+														<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="Ковёр"></picture>
+													</a>
+												</div>
+												<div class="product__content">
+													<div class="product__name">
+														<a href="product.html" class="link-product-name">Aster Q893A LVIZON LVIZON</a>
+													</div>
+													<div class="product__characteristics characteristics-product">
+														<div class="characteristics-product__line">
+															<div class="characteristics-product__title">Размер:</div>
+															<div class="characteristics-product__subtitle">60x100</div>
+														</div>
+														<div class="characteristics-product__line">
+															<div class="characteristics-product__title">Производитель:</div>
+															<div class="characteristics-product__subtitle">Казахстан</div>
+														</div>
+													</div>
+													<div class="product__reviews reviews-product">
+														<div class="reviews-product__stars rating">
+															<div class="rating__body">
+																<div class="rating__active"></div>
+															</div>
+															<div class="rating__value">0</div>
+														</div>
+														<div class="reviews-product__text text-reviews">
+															<span class="text-reviews__quantity">0</span>
+															<span class="text-reviews__text">Отзывов</span>
+														</div>
+													</div>
+													<div class="product__prices">
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Цена</span></div>
+															<div class="price-product__item price-product__item_price"><span>160.000</span><i class="_icon-tenge"></i></div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>В рассрочку</span></div>
+															<div class="price-product__installment installment-price-product">
+																<div class="price-product__item price-product__item_installment installment-price-product__price">
+																	<span>13.333</span><i class="_icon-tenge"></i>
+																</div>
+																<div class="installment-price-product__time">
+																	<span>x </span><span>12 мес</span>
+																</div>
+															</div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Старая цена</span></div>
+															<div class="price-product__item price-product__item_price-old"><span></span><i class="_icon-tenge"></i></div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Новая цена</span></div>
+															<div class="price-product__item price-product__item_price-new"><span></span><i class="_icon-tenge"></i></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="other-products__slide swiper-slide">
+											<div class="product">
+												<div class="product__top">
+													<div class="product__label label-product"><span>Новинка</span></div>
+													<div class="product__favorite favorite-product favorite-icon"><i class="_icon-favorite2"></i></div>
+												</div>
+												<div class="product__image">
+													<a href="product.html" class="link-product-img">
+														<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="Ковёр"></picture>
+													</a>
+												</div>
+												<div class="product__content">
+													<div class="product__name">
+														<a href="product.html" class="link-product-name">Aster Q893A LVIZON LVIZON</a>
+													</div>
+													<div class="product__characteristics characteristics-product">
+														<div class="characteristics-product__line">
+															<div class="characteristics-product__title">Размер:</div>
+															<div class="characteristics-product__subtitle">60x100</div>
+														</div>
+														<div class="characteristics-product__line">
+															<div class="characteristics-product__title">Производитель:</div>
+															<div class="characteristics-product__subtitle">Казахстан</div>
+														</div>
+													</div>
+													<div class="product__reviews reviews-product">
+														<div class="reviews-product__stars rating">
+															<div class="rating__body">
+																<div class="rating__active"></div>
+															</div>
+															<div class="rating__value">0</div>
+														</div>
+														<div class="reviews-product__text text-reviews">
+															<span class="text-reviews__quantity">0</span>
+															<span class="text-reviews__text">Отзывов</span>
+														</div>
+													</div>
+													<div class="product__prices">
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Цена</span></div>
+															<div class="price-product__item price-product__item_price"><span>160.000</span><i class="_icon-tenge"></i></div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>В рассрочку</span></div>
+															<div class="price-product__installment installment-price-product">
+																<div class="price-product__item price-product__item_installment installment-price-product__price">
+																	<span>13.333</span><i class="_icon-tenge"></i>
+																</div>
+																<div class="installment-price-product__time">
+																	<span>x </span><span>12 мес</span>
+																</div>
+															</div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Старая цена</span></div>
+															<div class="price-product__item price-product__item_price-old"><span></span><i class="_icon-tenge"></i></div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Новая цена</span></div>
+															<div class="price-product__item price-product__item_price-new"><span></span><i class="_icon-tenge"></i></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="other-products__slide swiper-slide">
+											<div class="product">
+												<div class="product__top">
+													<div class="product__label label-product"><span>Новинка</span></div>
+													<div class="product__favorite favorite-product favorite-icon"><i class="_icon-favorite2"></i></div>
+												</div>
+												<div class="product__image">
+													<a href="product.html" class="link-product-img">
+														<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="Ковёр"></picture>
+													</a>
+												</div>
+												<div class="product__content">
+													<div class="product__name">
+														<a href="product.html" class="link-product-name">Aster Q893A LVIZON LVIZON</a>
+													</div>
+													<div class="product__characteristics characteristics-product">
+														<div class="characteristics-product__line">
+															<div class="characteristics-product__title">Размер:</div>
+															<div class="characteristics-product__subtitle">60x100</div>
+														</div>
+														<div class="characteristics-product__line">
+															<div class="characteristics-product__title">Производитель:</div>
+															<div class="characteristics-product__subtitle">Казахстан</div>
+														</div>
+													</div>
+													<div class="product__reviews reviews-product">
+														<div class="reviews-product__stars rating">
+															<div class="rating__body">
+																<div class="rating__active"></div>
+															</div>
+															<div class="rating__value">0</div>
+														</div>
+														<div class="reviews-product__text text-reviews">
+															<span class="text-reviews__quantity">0</span>
+															<span class="text-reviews__text">Отзывов</span>
+														</div>
+													</div>
+													<div class="product__prices">
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Цена</span></div>
+															<div class="price-product__item price-product__item_price"><span>160.000</span><i class="_icon-tenge"></i></div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>В рассрочку</span></div>
+															<div class="price-product__installment installment-price-product">
+																<div class="price-product__item price-product__item_installment installment-price-product__price">
+																	<span>13.333</span><i class="_icon-tenge"></i>
+																</div>
+																<div class="installment-price-product__time">
+																	<span>x </span><span>12 мес</span>
+																</div>
+															</div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Старая цена</span></div>
+															<div class="price-product__item price-product__item_price-old"><span></span><i class="_icon-tenge"></i></div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Новая цена</span></div>
+															<div class="price-product__item price-product__item_price-new"><span></span><i class="_icon-tenge"></i></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="other-products__slide swiper-slide">
+											<div class="product">
+												<div class="product__top">
+													<div class="product__label label-product"><span>Новинка</span></div>
+													<div class="product__favorite favorite-product favorite-icon"><i class="_icon-favorite2"></i></div>
+												</div>
+												<div class="product__image">
+													<a href="product.html" class="link-product-img">
+														<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="Ковёр"></picture>
+													</a>
+												</div>
+												<div class="product__content">
+													<div class="product__name">
+														<a href="product.html" class="link-product-name">Aster Q893A LVIZON LVIZON</a>
+													</div>
+													<div class="product__characteristics characteristics-product">
+														<div class="characteristics-product__line">
+															<div class="characteristics-product__title">Размер:</div>
+															<div class="characteristics-product__subtitle">60x100</div>
+														</div>
+														<div class="characteristics-product__line">
+															<div class="characteristics-product__title">Производитель:</div>
+															<div class="characteristics-product__subtitle">Казахстан</div>
+														</div>
+													</div>
+													<div class="product__reviews reviews-product">
+														<div class="reviews-product__stars rating">
+															<div class="rating__body">
+																<div class="rating__active"></div>
+															</div>
+															<div class="rating__value">0</div>
+														</div>
+														<div class="reviews-product__text text-reviews">
+															<span class="text-reviews__quantity">0</span>
+															<span class="text-reviews__text">Отзывов</span>
+														</div>
+													</div>
+													<div class="product__prices">
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Цена</span></div>
+															<div class="price-product__item price-product__item_price"><span>160.000</span><i class="_icon-tenge"></i></div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>В рассрочку</span></div>
+															<div class="price-product__installment installment-price-product">
+																<div class="price-product__item price-product__item_installment installment-price-product__price">
+																	<span>13.333</span><i class="_icon-tenge"></i>
+																</div>
+																<div class="installment-price-product__time">
+																	<span>x </span><span>12 мес</span>
+																</div>
+															</div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Старая цена</span></div>
+															<div class="price-product__item price-product__item_price-old"><span></span><i class="_icon-tenge"></i></div>
+														</div>
+														<div class="product__price price-product">
+															<div class="price-product__title"><span>Новая цена</span></div>
+															<div class="price-product__item price-product__item_price-new"><span></span><i class="_icon-tenge"></i></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="other-products__scrollbar scrollbar-slider"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart__body cart__body_empty">
+					<div class="__container">
+						<h1 class="cart__title title">Корзина пуста</h1>
+						<div class="cart__content">
+							<div class="cart__text">Воспользуйтесь поиском, чтобы найти всё что нужно.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__items">
+				<div class="footer__item item-footer" data-spollers="479">
+					<button data-spoller class="item-footer__title"><span>Каталог товаров</span> <i class="spoller-icon"></i></button>
+					<div class="item-footer__content">
+						<a href="category.html" class="item-footer__link">Ковры</a>
+						<a href="category.html" class="item-footer__link">Коврики</a>
+						<a href="category.html" class="item-footer__link">Дорожки</a>
+						<a href="category.html" class="item-footer__link">Для ванной</a>
+						<a href="category.html" class="item-footer__link">Особенные ковры</a>
+					</div>
+				</div>
+				<div class="footer__item item-footer" data-spollers="479">
+					<button data-spoller class="item-footer__title"><span>Личный кабинет</span> <i class="spoller-icon"></i></button>
+					<div class="item-footer__content">
+						<a href="account.html" class="item-footer__link">Личный кабинет</a>
+						<a href="account.html" class="item-footer__link">Мои заказы</a>
+						<a href="favorite.html" class="item-footer__link">Избранное</a>
+					</div>
+				</div>
+				<div class="footer__item item-footer" data-spollers="479">
+					<button data-spoller class="item-footer__title"><span>Центр поддержки</span> <i class="spoller-icon"></i></button>
+					<div class="item-footer__content">
+						<a href="support.html" class="item-footer__link">Доставка</a>
+						<a href="support.html" class="item-footer__link">Возвраты</a>
+					</div>
+				</div>
+				<div class="footer__item item-footer" data-spollers="479">
+					<button data-spoller class="item-footer__title"><span>Помощь и контакты</span> <i class="spoller-icon"></i></button>
+					<div class="item-footer__content">
+						<a href="tel:87756576676" class="item-footer__link">
+							<i class="_icon-phone"></i>
+							<span class="_color-green">+7 775 657 66 76</span>
+						</a>
+						<a href="mailto:info@kilem.kz" class="item-footer__link">
+							<i class="_icon-mail"></i>
+							<span class="_color-green">info@kilem.kz</span>
+						</a>
+						<div class="item-footer__icons">
+							<a href="" class="item-footer__link"><i class="_icon-whatsapp"></i></a>
+							<a href="" class="item-footer__link"><i class="_icon-instagram"></i></a>
+							<a href="" class="item-footer__link"><i class="_icon-facebook"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__item item-footer">
+					<div class="item-footer__title">Рассылка</div>
+					<div class="item-footer__content">
+						<div class="item-footer__info">Подпишитесь, чтобы всегда быть в курсе наших новый акций</div>
+						<form action="#" class="item-footer__input form" data-dev>
+							<div class="form__input">
+								<div class="form__input-inner">
+									<input autocomplete="off" type="text" name="form[]" data-error="Некорректный email" placeholder="Ваш email" class="input" data-required="email">
+									<button type="sumbit" class="item-footer__input-icon"><i class="_icon-send-mail"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="popup-city" aria-hidden="true" class="popup city-popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="city-popup__title">
+					<p>Выберите ваш город</p>
+					<button data-close type="button" class="city-popup__close _icon-x"></button>
+				</div>
+				<div class="city-popup__form">
+					<div class="city-popup__input input-search">
+						<input autocomplete="off" type="text" name="search-city" data-dont-remember data-error="Ошибка" placeholder="" data-out-placeholder=".city-popup__placeholder p" class="input">
+						<div class="city-popup__placeholder placeholder-search">
+							<p>Найти город</p><i class="_icon-search"></i>
+						</div>
+					</div>
+					<div class="city-popup__items">
+						<div class="city-popup__column"></div>
+						<div class="city-popup__column"></div>
+						<div class="city-popup__column"></div>
+						<div class="city-popup__column"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="js/app.min.js?_v=20230715153053"></script>
+</body>
+
+</html>

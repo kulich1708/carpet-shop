@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Ковры</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230715153053">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top">
+				<div class="header__container">
+					<a href="index.html" class="header__logo">
+						<picture><source srcset="img/common/logo.webp" type="image/webp"><img src="img/common/logo.png" alt="Логотип"></picture>
+					</a>
+					<div class="header__location" data-popup="#popup-city" data-da=".menu__list, 767.98, 20">
+						<i class="_icon-location"></i>
+						<span class="user-city">Алматы</span>
+						<p>Изменить</p>
+					</div>
+					<div class="header__search search-header">
+						<div class="search-header__input input-search">
+							<input autocomplete="off" type="text" name="search" data-dont-remember data-error="Ошибка" placeholder="" data-out-placeholder=".search-header__placeholder p" class="input">
+							<div class="search-header__placeholder placeholder-search">
+								<p>Поиск <span>по товарам</span></p><i class="_icon-search"></i>
+							</div>
+						</div>
+					</div>
+					<div class="header__actions actions">
+						<a href="account.html" class="actions__column actions__column_user">
+							<div class="actions__icon">
+								<i class="_icon-user"></i>
+							</div>
+							<span class="actions__title">Аккаунт</span>
+						</a>
+						<a href="favorite.html" class="actions__column">
+							<div class="actions__icon">
+								<i class="_icon-favorite"></i>
+								<span class="actions__label favorite-quant"></span>
+							</div>
+							<span class="actions__title">Избранное</span>
+						</a>
+						<a href="cart.html" class="actions__column">
+							<div class="actions__icon">
+								<i class="_icon-cart"></i>
+								<span class="actions__label cart-quant"></span>
+							</div>
+							<span class="actions__title">Корзина</span>
+						</a>
+						<a href="#" class="actions__column actions__column_mobile actions__column_menu">
+							<div class="actions__icon">
+								<i class="_icon-catalog"></i>
+							</div>
+							<span class="actions__title">Каталог</span>
+						</a>
+						<a href="index.html" class="actions__column actions__column_mobile">
+							<div class="actions__icon">
+								<i class="_icon-home"></i>
+							</div>
+							<span class="actions__title">Главная</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu menu">
+				<div class="header__container">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item menu__item_mobile">
+								<a href="index.html" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="category.html" class="menu__link">Ковры</a>
+							</li>
+							<li class="menu__item">
+								<a href="category.html" class="menu__link">Коврики</a>
+							</li>
+							<li class="menu__item">
+								<a href="category.html" class="menu__link">Для ванной</a>
+							</li>
+							<li class="menu__item">
+								<a href="category.html" class="menu__link">Дорожки</a>
+							</li>
+							<li class="menu__item">
+								<a href="category.html" class="menu__link">Особенные ковры</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Центр поддержки</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Контакты</a>
+							</li>
+							<li class="menu__item menu__item_mobile">
+								<a href="auth.html" class="menu__link">Вход / Регистрация</a>
+							</li>
+							<button class="menu__icon icon-menu" type="button"><span></span></button>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="page category">
+			<div class="category__container">
+				<div class="category__breadcrumbs breadcrumbs">
+					<a href="index.html" class="breadcrumbs__link link">Главная</a>
+					<span>/</span>
+					<a href="index.html" class="breadcrumbs__link-current link">Ковры</a>
+				</div>
+				<div class="category__body">
+					<aside class="category__filter filter">
+						<div data-spollers class="filter__items spollers">
+							<div class="filter__item filter__item_header header-filter filter-item">
+								<div class="header-filter__info" data-da=".filter__items, 767.98, first">
+									<div class="header-filter__actions">
+										<p class="filter-item__title filter__title">Фильтры</p>
+										<i class="filter__close _icon-x"></i>
+										<button type="submit" class="header-filter__btn link">Сбросить</button>
+									</div>
+									<div class="header-filter__text">Найдено 55 товаров</div>
+								</div>
+								<div class="header-filter__category">
+									<div class="filter-item__title">Выберите категорию</div>
+									<div class="header-filter__checkbox checkbox">
+										<div class="checkbox__item">
+											<input id="category_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" checked>
+											<label for="category_1" class="checkbox__label"><span class="checkbox__text">Ковры</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="category_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="category_2" class="checkbox__label"><span class="checkbox__text">Для ванной</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="category_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="category_3" class="checkbox__label"><span class="checkbox__text">Коврики</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="category_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="category_4" class="checkbox__label"><span class="checkbox__text">Дорожки</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="category_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="category_5" class="checkbox__label"><span class="checkbox__text">Особенные ковры</span></label>
+										</div>
+									</div>
+								</div>
+								<div class="header-filter__price price-filter">
+									<div class="price-filter__header">
+										<p class="filter-item__title">Цена,</p>
+										<span class="filter-item__subtitle">тенге</span>
+									</div>
+									<div class="price-filter__body">
+										<div class="price-filter__slider"></div>
+										<div class="price-filter__inputs">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input price-filter__input price-filter__input_first">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input price-filter__input price-filter__input_last">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Страна</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="a_1" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="a_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Казахстан</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="a_2" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="a_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Турция</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="a_3" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="a_3" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Россия</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Размеры</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="b_1" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="b_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">150x230 см</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="b_2" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="b_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">200x300 см</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Материал</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="c_1" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="c_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Натуральные</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="c_2" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="c_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Искусственные</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Толщина</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="d_1" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="d_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">0,5 см</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="d_2" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="d_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">0,4 см</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Тип</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="e_1" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="e_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Безворсовые</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="e_2" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="e_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">С ворсом</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Форма</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="f_1" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="f_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Овальная</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="f_2" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="f_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Прямоугольная</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Стиль</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="g_1" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="g_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Новый</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="g_2" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="g_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Старый</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Производитель</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="h_1" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="h_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Казахстан</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="h_2" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="h_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Турция</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="h_3" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="h_3" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Россия</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Новинки и скидки</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="i_1" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="i_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Новинки</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="i_2" data-error="Ошибка" class="checkbox__input filter-item__input" type="checkbox" value="1" name="form[]">
+											<label for="i_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Cкидки</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<div class="category__main">
+						<h1 class="category__title title">Ковры</h1>
+						<div class="category__sort sort-category">
+							<div class="sort-category__title">Сортировать по:</div>
+							<ul class="sort-category__items">
+								<li class="sort-category__item link _active">Популярности</li>
+								<li class="sort-category__item link">Сначала дешевые</li>
+								<li class="sort-category__item link">Сначала дорогие</li>
+								<li class="sort-category__item link">По рейтингу</li>
+							</ul>
+						</div>
+						<div class="category__actions">
+							<div class="category__action action-category filter-action">
+								<div class="action-category__title">Фильтры</div>
+								<div class="action-category__body">
+									<div class="filter-action__subtitle"></div>
+									<i class="_icon-filter"></i>
+								</div>
+							</div>
+							<div class="category__action action-category sort-action">
+								<div class="action-category__title">Сортировка</div>
+								<div class="action-category__body">
+									<select name="form[]" class="form" data-show-selected data-icon-class="sort-action__icon spoller-icon">
+										<option value="1" selected>По популярности
+										</option>
+										<option value="2">Сначала дешевые</option>
+										<option value="3">Сначала дорогие</option>
+										<option value="4">По рейтингу</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="category__products products">
+							<div class="products__items">
+								<div class="product">
+									<div class="product__top">
+										<div class="product__label label-product"><span>Новинка</span></div>
+										<div class="product__favorite favorite-product favorite-icon"><i class="_icon-favorite2"></i></div>
+									</div>
+									<div class="product__image">
+										<a href="product.html" class="link-product-img">
+											<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="Ковёр"></picture>
+										</a>
+									</div>
+									<div class="product__content">
+										<div class="product__name">
+											<a href="product.html" class="link-product-name">Aster Q893A LVIZON LVIZON</a>
+										</div>
+										<div class="product__characteristics characteristics-product">
+											<div class="characteristics-product__line">
+												<div class="characteristics-product__title">Размер:</div>
+												<div class="characteristics-product__subtitle">60x100</div>
+											</div>
+											<div class="characteristics-product__line">
+												<div class="characteristics-product__title">Производитель:</div>
+												<div class="characteristics-product__subtitle">Казахстан</div>
+											</div>
+										</div>
+										<div class="product__reviews reviews-product">
+											<div class="reviews-product__stars rating">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">0</div>
+											</div>
+											<div class="reviews-product__text text-reviews">
+												<span class="text-reviews__quantity">0</span>
+												<span class="text-reviews__text">Отзывов</span>
+											</div>
+										</div>
+										<div class="product__prices">
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Цена</span></div>
+												<div class="price-product__item price-product__item_price"><span>160.000</span><i class="_icon-tenge"></i></div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>В рассрочку</span></div>
+												<div class="price-product__installment installment-price-product">
+													<div class="price-product__item price-product__item_installment installment-price-product__price">
+														<span>13.333</span><i class="_icon-tenge"></i>
+													</div>
+													<div class="installment-price-product__time">
+														<span>x </span><span>12 мес</span>
+													</div>
+												</div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Старая цена</span></div>
+												<div class="price-product__item price-product__item_price-old"><span></span><i class="_icon-tenge"></i></div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Новая цена</span></div>
+												<div class="price-product__item price-product__item_price-new"><span></span><i class="_icon-tenge"></i></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product">
+									<div class="product__top">
+										<div class="product__label label-product"><span>Новинка</span></div>
+										<div class="product__favorite favorite-product favorite-icon"><i class="_icon-favorite2"></i></div>
+									</div>
+									<div class="product__image">
+										<a href="product.html" class="link-product-img">
+											<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="Ковёр"></picture>
+										</a>
+									</div>
+									<div class="product__content">
+										<div class="product__name">
+											<a href="product.html" class="link-product-name">Aster Q893A LVIZON LVIZON</a>
+										</div>
+										<div class="product__characteristics characteristics-product">
+											<div class="characteristics-product__line">
+												<div class="characteristics-product__title">Размер:</div>
+												<div class="characteristics-product__subtitle">60x100</div>
+											</div>
+											<div class="characteristics-product__line">
+												<div class="characteristics-product__title">Производитель:</div>
+												<div class="characteristics-product__subtitle">Казахстан</div>
+											</div>
+										</div>
+										<div class="product__reviews reviews-product">
+											<div class="reviews-product__stars rating">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">0</div>
+											</div>
+											<div class="reviews-product__text text-reviews">
+												<span class="text-reviews__quantity">0</span>
+												<span class="text-reviews__text">Отзывов</span>
+											</div>
+										</div>
+										<div class="product__prices">
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Цена</span></div>
+												<div class="price-product__item price-product__item_price"><span>160.000</span><i class="_icon-tenge"></i></div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>В рассрочку</span></div>
+												<div class="price-product__installment installment-price-product">
+													<div class="price-product__item price-product__item_installment installment-price-product__price">
+														<span>13.333</span><i class="_icon-tenge"></i>
+													</div>
+													<div class="installment-price-product__time">
+														<span>x </span><span>12 мес</span>
+													</div>
+												</div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Старая цена</span></div>
+												<div class="price-product__item price-product__item_price-old"><span></span><i class="_icon-tenge"></i></div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Новая цена</span></div>
+												<div class="price-product__item price-product__item_price-new"><span></span><i class="_icon-tenge"></i></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product">
+									<div class="product__top">
+										<div class="product__label label-product"><span>Новинка</span></div>
+										<div class="product__favorite favorite-product favorite-icon"><i class="_icon-favorite2"></i></div>
+									</div>
+									<div class="product__image">
+										<a href="product.html" class="link-product-img">
+											<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="Ковёр"></picture>
+										</a>
+									</div>
+									<div class="product__content">
+										<div class="product__name">
+											<a href="product.html" class="link-product-name">Aster Q893A LVIZON LVIZON</a>
+										</div>
+										<div class="product__characteristics characteristics-product">
+											<div class="characteristics-product__line">
+												<div class="characteristics-product__title">Размер:</div>
+												<div class="characteristics-product__subtitle">60x100</div>
+											</div>
+											<div class="characteristics-product__line">
+												<div class="characteristics-product__title">Производитель:</div>
+												<div class="characteristics-product__subtitle">Казахстан</div>
+											</div>
+										</div>
+										<div class="product__reviews reviews-product">
+											<div class="reviews-product__stars rating">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">0</div>
+											</div>
+											<div class="reviews-product__text text-reviews">
+												<span class="text-reviews__quantity">0</span>
+												<span class="text-reviews__text">Отзывов</span>
+											</div>
+										</div>
+										<div class="product__prices">
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Цена</span></div>
+												<div class="price-product__item price-product__item_price"><span>160.000</span><i class="_icon-tenge"></i></div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>В рассрочку</span></div>
+												<div class="price-product__installment installment-price-product">
+													<div class="price-product__item price-product__item_installment installment-price-product__price">
+														<span>13.333</span><i class="_icon-tenge"></i>
+													</div>
+													<div class="installment-price-product__time">
+														<span>x </span><span>12 мес</span>
+													</div>
+												</div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Старая цена</span></div>
+												<div class="price-product__item price-product__item_price-old"><span></span><i class="_icon-tenge"></i></div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Новая цена</span></div>
+												<div class="price-product__item price-product__item_price-new"><span></span><i class="_icon-tenge"></i></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product">
+									<div class="product__top">
+										<div class="product__label label-product"><span>Новинка</span></div>
+										<div class="product__favorite favorite-product favorite-icon"><i class="_icon-favorite2"></i></div>
+									</div>
+									<div class="product__image">
+										<a href="product.html" class="link-product-img">
+											<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="Ковёр"></picture>
+										</a>
+									</div>
+									<div class="product__content">
+										<div class="product__name">
+											<a href="product.html" class="link-product-name">Aster Q893A LVIZON LVIZON</a>
+										</div>
+										<div class="product__characteristics characteristics-product">
+											<div class="characteristics-product__line">
+												<div class="characteristics-product__title">Размер:</div>
+												<div class="characteristics-product__subtitle">60x100</div>
+											</div>
+											<div class="characteristics-product__line">
+												<div class="characteristics-product__title">Производитель:</div>
+												<div class="characteristics-product__subtitle">Казахстан</div>
+											</div>
+										</div>
+										<div class="product__reviews reviews-product">
+											<div class="reviews-product__stars rating">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">0</div>
+											</div>
+											<div class="reviews-product__text text-reviews">
+												<span class="text-reviews__quantity">0</span>
+												<span class="text-reviews__text">Отзывов</span>
+											</div>
+										</div>
+										<div class="product__prices">
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Цена</span></div>
+												<div class="price-product__item price-product__item_price"><span>160.000</span><i class="_icon-tenge"></i></div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>В рассрочку</span></div>
+												<div class="price-product__installment installment-price-product">
+													<div class="price-product__item price-product__item_installment installment-price-product__price">
+														<span>13.333</span><i class="_icon-tenge"></i>
+													</div>
+													<div class="installment-price-product__time">
+														<span>x </span><span>12 мес</span>
+													</div>
+												</div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Старая цена</span></div>
+												<div class="price-product__item price-product__item_price-old"><span></span><i class="_icon-tenge"></i></div>
+											</div>
+											<div class="product__price price-product">
+												<div class="price-product__title"><span>Новая цена</span></div>
+												<div class="price-product__item price-product__item_price-new"><span></span><i class="_icon-tenge"></i></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="products__more button">
+								<span>Показать еще</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__items">
+					<div class="footer__item item-footer" data-spollers="479">
+						<button data-spoller class="item-footer__title"><span>Каталог товаров</span> <i class="spoller-icon"></i></button>
+						<div class="item-footer__content">
+							<a href="category.html" class="item-footer__link">Ковры</a>
+							<a href="category.html" class="item-footer__link">Коврики</a>
+							<a href="category.html" class="item-footer__link">Дорожки</a>
+							<a href="category.html" class="item-footer__link">Для ванной</a>
+							<a href="category.html" class="item-footer__link">Особенные ковры</a>
+						</div>
+					</div>
+					<div class="footer__item item-footer" data-spollers="479">
+						<button data-spoller class="item-footer__title"><span>Личный кабинет</span> <i class="spoller-icon"></i></button>
+						<div class="item-footer__content">
+							<a href="account.html" class="item-footer__link">Личный кабинет</a>
+							<a href="account.html" class="item-footer__link">Мои заказы</a>
+							<a href="favorite.html" class="item-footer__link">Избранное</a>
+						</div>
+					</div>
+					<div class="footer__item item-footer" data-spollers="479">
+						<button data-spoller class="item-footer__title"><span>Центр поддержки</span> <i class="spoller-icon"></i></button>
+						<div class="item-footer__content">
+							<a href="support.html" class="item-footer__link">Доставка</a>
+							<a href="support.html" class="item-footer__link">Возвраты</a>
+						</div>
+					</div>
+					<div class="footer__item item-footer" data-spollers="479">
+						<button data-spoller class="item-footer__title"><span>Помощь и контакты</span> <i class="spoller-icon"></i></button>
+						<div class="item-footer__content">
+							<a href="tel:87756576676" class="item-footer__link">
+								<i class="_icon-phone"></i>
+								<span class="_color-green">+7 775 657 66 76</span>
+							</a>
+							<a href="mailto:info@kilem.kz" class="item-footer__link">
+								<i class="_icon-mail"></i>
+								<span class="_color-green">info@kilem.kz</span>
+							</a>
+							<div class="item-footer__icons">
+								<a href="" class="item-footer__link"><i class="_icon-whatsapp"></i></a>
+								<a href="" class="item-footer__link"><i class="_icon-instagram"></i></a>
+								<a href="" class="item-footer__link"><i class="_icon-facebook"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item item-footer">
+						<div class="item-footer__title">Рассылка</div>
+						<div class="item-footer__content">
+							<div class="item-footer__info">Подпишитесь, чтобы всегда быть в курсе наших новый акций</div>
+							<form action="#" class="item-footer__input form" data-dev>
+								<div class="form__input">
+									<div class="form__input-inner">
+										<input autocomplete="off" type="text" name="form[]" data-error="Некорректный email" placeholder="Ваш email" class="input" data-required="email">
+										<button type="sumbit" class="item-footer__input-icon"><i class="_icon-send-mail"></i></button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="popup-city" aria-hidden="true" class="popup city-popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="city-popup__title">
+						<p>Выберите ваш город</p>
+						<button data-close type="button" class="city-popup__close _icon-x"></button>
+					</div>
+					<div class="city-popup__form">
+						<div class="city-popup__input input-search">
+							<input autocomplete="off" type="text" name="search-city" data-dont-remember data-error="Ошибка" placeholder="" data-out-placeholder=".city-popup__placeholder p" class="input">
+							<div class="city-popup__placeholder placeholder-search">
+								<p>Найти город</p><i class="_icon-search"></i>
+							</div>
+						</div>
+						<div class="city-popup__items">
+							<div class="city-popup__column"></div>
+							<div class="city-popup__column"></div>
+							<div class="city-popup__column"></div>
+							<div class="city-popup__column"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230715153053"></script>
+</body>
+
+</html>
