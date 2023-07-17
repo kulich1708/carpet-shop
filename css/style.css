@@ -233,6 +233,10 @@ h6 {
   font-size: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 20rem;
 }
