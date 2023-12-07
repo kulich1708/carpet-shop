@@ -1,0 +1,64 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	background: #cb4a4a;
+	border-radius: rem(10);
+	font-weight: 700;
+	font-size: rem(18);
+	line-height: 140%;
+	text-align: center;
+	color: #ffffff;
+	padding: rem(13) rem(38);
+	display: inline-flex;
+	align-self: center;
+	justify-content: center;
+	align-items: center;
+	@media (max-width: $mobileSmall) {
+		width: 100%;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			transition: 0.1s;
+			background: #aa3737;
+		}
+		&:not(:hover) {
+			transition: 0.1s;
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+	&._no-active {
+		background: #f9f9f9;
+		color: #1d1d1d;
+		pointer-events: none;
+	}
+}
+.button-installment {
+	padding: rem(13) rem(15);
+	font-weight: 700;
+	font-size: rem(18);
+	line-height: 140%;
+	text-align: center;
+	color: rgba(29, 29, 29, 0.5);
+	border: rem(1) solid rgba(29, 29, 29, 0.5);
+	border-radius: rem(10);
+	@media (any-hover: hover) {
+		&:hover {
+			transition: 0.1s;
+			background: $hoverGreen;
+			color: #fcfcfc;
+			border-color: $hoverGreen;
+		}
+		&:not(:hover) {
+			transition: 0.1s;
+		}
+	}
+	@media (max-width: $mobileSmall) {
+		width: 100%;
+	}
+	@media (min-width: $mobileSmall) {
+		min-width: rem(320);
+	}
+}

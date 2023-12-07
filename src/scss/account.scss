@@ -1,0 +1,666 @@
+.account {
+	// .account__container
+	&__container {
+		// .account__container_mobile
+		&_mobile {
+		}
+	}
+	// .account__breadcrumbs
+	&__breadcrumbs {
+	}
+	&._tab-open {
+		.account__breadcrumbs {
+			display: none;
+		}
+	}
+	// .account__main
+	&__main {
+	}
+	// .account__tabs
+	&__tabs {
+	}
+}
+.tabs-account {
+	display: flex;
+	position: relative;
+	@media (min-width: $mobile) {
+		gap: rem(40);
+	}
+	// .tabs-account__navigation
+	&__navigation {
+		min-width: rem(234);
+		@media (min-width: $tablet) {
+			flex: 0 1 rem(400);
+		}
+		@media (max-width: $mobile) {
+			flex: 0 1 100%;
+			align-self: flex-start;
+		}
+	}
+	// .tabs-account__user, .tabs-account__title
+	&__user,
+	&__title {
+		border-radius: rem(10);
+		background: #fff;
+		box-shadow: 0 0 rem(10) 0 rgba(0, 0, 0, 0.1);
+	}
+	// .tabs-account__user
+	&__user {
+		margin: rem(0) rem(0) rem(16) rem(0);
+	}
+	// .tabs-account__title
+	&__title {
+		font-size: rem(18);
+		line-height: 145%;
+		color: #1d1d1d;
+		display: flex;
+		gap: rem(30);
+		padding: rem(20) rem(40);
+		width: 100%;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		transition: 0.2s;
+		@media (max-width: $tablet) and (min-width: $mobile) {
+			padding: rem(15) rem(25);
+			gap: rem(15);
+		}
+		&::after {
+			position: absolute;
+			left: rem(-10);
+			top: 0;
+			height: 100%;
+			width: rem(10);
+			background: $hoverGreen;
+			content: "";
+			opacity: 0;
+			transition: inherit;
+		}
+		&:not(&._tab-active) {
+			@media (any-hover: hover) {
+				&:hover {
+					transition: 0.1s;
+					color: $hoverGreen;
+				}
+				&:not(:hover) {
+					//transition: 0.1s;
+				}
+			}
+		}
+		&:not(:last-child) {
+			margin: rem(0) rem(0) rem(16) rem(0);
+		}
+		&._tab-active {
+			@media (min-width: $mobile) {
+				background: #f2f3f5;
+				cursor: default;
+				&::after {
+					opacity: 1;
+					left: 0;
+				}
+			}
+		}
+	}
+	// .tabs-account__content
+	&__content {
+		flex: 1 1 auto;
+	}
+	// .tabs-account__item
+	&__item {
+		@media (max-width: $mobile) {
+			position: absolute;
+			flex: 0 1 100%;
+			width: 100%;
+			transform: translate(120%, 0);
+			left: 0;
+			top: 0;
+			&._active {
+				transform: translate(0, 0);
+			}
+		}
+	}
+	// .tabs-account__actions
+	&__actions {
+		display: flex;
+		justify-content: space-between;
+		padding: rem(0) rem(20);
+		gap: rem(15);
+	}
+	// .tabs-account__action
+	&__action {
+		font-size: rem(18);
+		line-height: 145%;
+		@media (max-width: $mobileSmall) {
+			font-size: rem(14);
+		}
+		&_sign-out {
+			color: #cb4a4a;
+			@media (any-hover: hover) {
+				&:hover {
+					transition: 0.1s;
+					color: #aa3737;
+				}
+				&:not(:hover) {
+					transition: 0.1s;
+				}
+			}
+		}
+		&_forgot-password {
+			@media (any-hover: hover) {
+				&:hover {
+					transition: 0.1s;
+					color: $hoverGreen;
+				}
+				&:not(:hover) {
+					transition: 0.1s;
+				}
+			}
+		}
+	}
+}
+.user-account {
+	padding: rem(20);
+	display: flex;
+	gap: rem(20);
+	align-items: center;
+	@media (max-width: $tablet) and (min-width: $mobile) {
+		flex-direction: column;
+		justify-content: center;
+	}
+	// .user-account__imageblock
+	&__imageblock {
+		width: rem(100);
+		height: rem(100);
+		img {
+			border-radius: 50%;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	// .user-account__body
+	&__body {
+		font-size: rem(18);
+		line-height: 145%;
+		color: #1d1d1d;
+	}
+	// .user-account__text
+	&__text {
+		margin: rem(0) rem(0) rem(10) rem(0);
+	}
+	// .user-account__name
+	&__name {
+		font-weight: 700;
+		.name-empty {
+			display: none;
+		}
+		&._empty {
+			span {
+				display: none;
+			}
+			.name-empty {
+				display: inline;
+			}
+		}
+	}
+}
+.item-account {
+	//position: relative;
+	// .item-account_address
+	&_address {
+	}
+	// .item-account_payment
+	&_payment {
+	}
+	// .item-account__header, .item-account__body
+	&__header,
+	&__body {
+		border-radius: rem(10);
+		background: #fff;
+		box-shadow: 0 0 rem(10) 0 rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+	}
+	// .item-account__header
+	&__header {
+		margin: rem(0) rem(0) rem(15) rem(0);
+		padding: rem(30);
+		@media (max-width: $mobile) {
+			display: none;
+			&_button {
+				padding: rem(20);
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+	// .item-account__return
+	&__return {
+		@media (max-width: $mobile) {
+			margin: rem(0) rem(0) rem(10) rem(0);
+		}
+		@media (max-width: $mobileSmall) {
+			padding: rem(0) rem(20);
+		}
+	}
+	// .item-account__title
+	&__title {
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		gap: rem(11);
+		i {
+			display: none;
+			transform: rotate(180deg);
+			font-size: rem(11);
+			margin: rem(-3) rem(0) rem(0) rem(0);
+			@media (max-width: $mobile) {
+				display: block;
+			}
+			&._active {
+				display: block;
+				font-size: rem(33);
+				@media (max-width: $mobile) {
+					font-size: rem(11);
+				}
+			}
+		}
+
+		// .item-account__title_lower
+		&_lower {
+			text-transform: none;
+		}
+		@media (max-width: $mobile) {
+			text-transform: none;
+			font-size: rem(18);
+			font-weight: normal;
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: rem(14);
+		}
+	}
+	// .item-account__body
+	&__body {
+		padding: rem(20);
+		// .item-account__body_information
+		&_information {
+			overflow: initial;
+		}
+		// .item-account__body_order
+		&_order {
+			padding: rem(0);
+		}
+		// .item-account__body_change
+		&_change {
+			display: none;
+			&._active {
+				display: block;
+			}
+			.title {
+				display: flex !important;
+				@media (min-width: $mobile) {
+					margin: rem(0) rem(0) rem(50) rem(0);
+				}
+			}
+		}
+		// .item-account__body_empty
+		&_empty {
+			display: none;
+		}
+		// .item-account__body_no-change
+		&_no-change {
+			&:not(:last-child) {
+				margin: rem(0) rem(0) rem(10) rem(0);
+			}
+		}
+	}
+	// .item-account__order
+	&__order {
+	}
+	// .item-account__input
+	&__input {
+		width: 100%;
+		@media (min-width: $mobileSmall) {
+			max-width: rem(340);
+		}
+		input {
+			width: 100%;
+		}
+		&:not(:last-child) {
+			margin: rem(0) rem(0) rem(25) rem(0);
+		}
+	}
+	// .item-account__input-inner
+	&__input-inner {
+		display: flex;
+		gap: rem(15);
+	}
+	// .item-account__label
+	&__label {
+		margin: rem(0) rem(0) rem(7) rem(0);
+		font-size: rem(18);
+		line-height: 145%;
+		color: rgba(29, 29, 29, 0.5);
+		@media (max-width: $mobileSmall) {
+			font-size: rem(14);
+		}
+	}
+	// .item-account__date
+	&__date {
+		display: flex;
+		gap: rem(12);
+	}
+	// .item-account__date-inner
+	&__date-inner {
+		.select__options {
+			position: absolute;
+			top: rem(50);
+			max-height: rem(85);
+			button {
+				font-size: rem(16);
+				@media (max-width: $mobileSmall) {
+					font-size: rem(14);
+				}
+			}
+			@media (max-width: $mobileSmall) {
+				top: rem(45);
+			}
+		}
+		&_day,
+		&_year {
+			flex: 0 1 rem(80);
+			text-align: center;
+			input {
+				text-align: center;
+			}
+		}
+		&_month {
+			flex: 1 1 auto;
+			.select__value {
+				text-align: center;
+				flex: 1 1 auto;
+			}
+		}
+	}
+	// .item-account__button
+	&__button {
+		@media (min-width: $mobile) {
+			margin: rem(15) rem(0) rem(0) rem(0);
+		}
+	}
+	// .item-account__address
+	&__address {
+	}
+	// .item-account__actions
+	&__actions {
+	}
+	// .item-account__text
+	&__text {
+		line-height: 145%;
+		color: #1d1d1d;
+		@media (min-width: $mobileSmall) {
+			font-size: rem(18);
+		}
+		@media (max-width: $mobile) {
+			margin: rem(0) rem(0) rem(10) rem(0);
+		}
+	}
+	// .item-account__payment
+	&__payment {
+	}
+	&._empty {
+		.item-account__body_no-change {
+			display: none;
+		}
+		.item-account__body_empty {
+			display: block;
+		}
+		.item-account__header {
+			.item-account__button {
+				display: none;
+			}
+			@media (max-width: $mobile) {
+				display: none;
+			}
+		}
+	}
+}
+.form-change-title {
+	cursor: pointer;
+}
+.order-account {
+	// .order-account__header
+	&__header {
+		background: #fcfcfc;
+		padding: rem(10) rem(20);
+	}
+	// .order-account__top
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			gap: rem(4);
+		}
+	}
+	// .order-account__text
+	&__text {
+		line-height: 145%;
+		color: #1d1d1d;
+		@media (min-width: $mobileSmall) {
+			font-size: rem(18);
+		}
+	}
+	// .order-account__bottom
+	&__bottom {
+		color: $hoverGreen;
+		font-size: rem(12);
+		line-height: 145%;
+		@media (min-width: $mobile) {
+			margin: rem(10) rem(0) rem(0) rem(0);
+		}
+	}
+	// .order-account__body
+	&__body {
+		margin: rem(25) rem(0) rem(0) rem(0);
+		padding: rem(0) rem(20);
+	}
+	// .order-account__status
+	&__status {
+		display: flex;
+		align-items: center;
+		gap: rem(10);
+		margin: rem(0) rem(0) rem(25) rem(0);
+		@media (max-width: $mobileSmall) {
+			gap: rem(5);
+		}
+	}
+	// .order-account__label
+	&__label {
+		background: $hoverGreen;
+		border-radius: rem(10);
+		padding: rem(2) rem(18);
+		font-size: rem(18);
+		line-height: 145%;
+		color: #fff;
+		@media (max-width: $mobileSmall) {
+			font-size: rem(14);
+		}
+	}
+	// .order-account__imageblocks
+	&__imageblocks {
+		display: flex;
+		gap: rem(20);
+	}
+	// .order-account__imageblock
+	&__imageblock {
+		img {
+			height: rem(200);
+			object-fit: contain;
+			@media (max-width: $mobileSmall) {
+				height: rem(135);
+			}
+		}
+	}
+	// .order-account__footer
+	&__footer {
+		margin: rem(25) rem(0) rem(0) rem(0);
+		padding: rem(25) rem(20);
+		border-top: rem(1) solid rgba(0, 0, 0, 0.5);
+		@media (max-width: $mobileSmall) {
+			margin: rem(15) rem(0) rem(0) rem(0);
+			padding: rem(10) rem(20);
+		}
+	}
+}
+.address-account {
+	display: flex;
+	column-gap: rem(15);
+	@media (max-width: em(1100)) {
+		flex-direction: column;
+	}
+	// .address-account__body
+	&__body {
+		flex: 1 1 auto;
+	}
+	// .address-account__item
+	&__item {
+		display: flex;
+		gap: rem(8);
+		&:not(:last-child) {
+			margin: rem(0) rem(0) rem(10) rem(0);
+		}
+		@media (max-width: $mobileSmall) {
+			gap: rem(4);
+		}
+	}
+	&__subtitle,
+	&__title {
+		font-size: rem(18);
+		line-height: 145%;
+		@media (max-width: $mobileSmall) {
+			font-size: rem(14);
+		}
+	}
+	// .address-account__subtitle
+	&__subtitle {
+		color: #9c9c9c;
+		span {
+			color: #1d1d1d;
+		}
+	}
+	// .address-account__title
+	&__title {
+		color: #1d1d1d;
+	}
+}
+.actions-account {
+	@media (max-width: em(1100)) {
+		margin: rem(25) rem(0) rem(0) rem(0);
+		display: flex;
+		justify-content: space-between;
+	}
+	// .actions-account__item
+	&__item {
+		display: flex;
+		gap: rem(10);
+		line-height: 145%;
+		align-items: center;
+		cursor: pointer;
+		font-size: rem(18);
+		@media (min-width: em(1100)) {
+			&:not(:last-child) {
+				margin: rem(0) rem(0) rem(15) rem(0);
+			}
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: rem(14);
+		}
+		span {
+			position: relative;
+			transition: inherit;
+			&::after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				content: "";
+				width: 100%;
+				height: rem(1);
+				opacity: 0;
+				transition: inherit;
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				transition: 0.1s;
+				span {
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+			&:not(:hover) {
+				transition: 0.1s;
+			}
+		}
+		// .actions-account__item_change
+		&_change {
+			color: $hoverGreen;
+			span {
+				&:after {
+					background: #4a695b;
+				}
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					color: #4a695b;
+				}
+			}
+		}
+		// .actions-account__item_delete
+		&_delete {
+			color: #cb4a4a;
+			span {
+				&:after {
+					background: #cb4a4a;
+				}
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					color: #aa3737;
+				}
+			}
+		}
+	}
+}
+.payment-account {
+	display: flex;
+	column-gap: rem(15);
+	@media (max-width: em(1100)) {
+		flex-direction: column;
+	}
+	// .payment-account__body
+	&__body {
+		flex: 1 1 auto;
+		display: flex;
+		gap: rem(10);
+	}
+	// .payment-account__imageblock
+	&__imageblock {
+	}
+	// .payment-account__items
+	&__items {
+	}
+	// .payment-account__item
+	&__item {
+		font-size: rem(18);
+		line-height: 145%;
+		&:not(:last-child) {
+			margin: rem(0) rem(0) rem(10) rem(0);
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: rem(14);
+		}
+	}
+}
+.payment-change {
+}

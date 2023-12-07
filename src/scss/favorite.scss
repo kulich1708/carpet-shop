@@ -1,0 +1,140 @@
+.favorite {
+	// .favorite_empty
+	&_empty {
+		.favorite__body_empty {
+			display: block;
+		}
+		.favorite__body_not-empty {
+			display: none;
+		}
+	}
+	// .favorite__container
+	&__container {
+	}
+	// .favorite__breadcrumbs
+	&__breadcrumbs {
+	}
+	// .favorite__body
+	&__body {
+		// .favorite__body_not-empty
+		&_not-empty {
+		}
+		// .favorite__body_empty
+		&_empty {
+			display: none;
+		}
+	}
+	// .favorite__title
+	&__title {
+	}
+	// .favorite__content
+	&:not(.favorite_empty) {
+		.favorite__content {
+			margin: rem(30) rem(0) rem(0) rem(0);
+			@media (max-width: $mobileSmall) {
+				margin: rem(10) rem(0) rem(0) rem(0);
+			}
+		}
+	}
+	&__content {
+		margin: rem(10) rem(0) rem(0) rem(0);
+	}
+	// .favorite__items
+	&__items {
+		margin: rem(20) rem(0) rem(0) rem(0);
+		display: flex;
+		flex-wrap: wrap;
+		margin: rem(-25) rem(-32.5) rem(-25) rem(-32.5);
+		@media (max-width: $pc) {
+			@include adaptiveValue("margin-left", -32.5, -15, 1320, 991.98);
+			@include adaptiveValue("margin-right", -32.5, -15, 1320, 991.98);
+		}
+		@media (max-width: $tablet) {
+			@include adaptiveValue("margin-left", -25, -15, 991.98, 767.98);
+			@include adaptiveValue("margin-right", -25, -15, 991.98, 767.98);
+		}
+		@media (max-width: $mobile) {
+			margin-top: rem(20);
+			margin-bottom: rem(20);
+			@include adaptiveValue("margin-left", -30, -5, 767.98, 320);
+			@include adaptiveValue("margin-right", -30, -5, 767.98, 320);
+		}
+		@media (max-width: $mobileSmall) {
+			margin-top: rem(15);
+			margin-bottom: rem(15);
+		}
+	}
+	// .favorite__item
+	&__item {
+		flex: 0 1 25%;
+		padding: rem(25) rem(32.5) rem(25) rem(32.5);
+		@media (max-width: $pc) {
+			@include adaptiveValue("padding-left", 32.5, 15, 1320, 991.98);
+			@include adaptiveValue("padding-right", 32.5, 15, 1320, 991.98);
+		}
+		@media (max-width: $tablet) {
+			flex: 0 1 33.33%;
+			@include adaptiveValue("padding-left", 25, 15, 991.98, 767.98);
+			@include adaptiveValue("padding-right", 25, 15, 991.98, 767.98);
+		}
+		@media (max-width: $mobile) {
+			padding-top: rem(20);
+			padding-bottom: rem(20);
+			flex: 0 1 50%;
+			@include adaptiveValue("padding-left", 30, 5, 767.98, 320);
+			@include adaptiveValue("padding-right", 30, 5, 767.98, 320);
+		}
+		@media (max-width: $mobileSmall) {
+			padding-top: rem(15);
+			padding-bottom: rem(15);
+		}
+	}
+	// .favorite__product
+	&__product {
+		@media (max-width: $mobileSmall) {
+			.price-product._active {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: rem(4);
+				.price-product__title {
+					margin: 0;
+				}
+			}
+			.installment-price-product__time {
+				display: none;
+			}
+			.installment-price-product__price {
+				background: #fff;
+				color: $hoverGreen;
+				padding: 0;
+			}
+		}
+	}
+	// .favorite__text
+	&__text {
+		line-height: 145%;
+		@media (min-width: $mobileSmall) {
+			font-size: rem(18);
+		}
+	}
+	// .favorite__button
+	&__button {
+		margin: rem(30) rem(0) rem(0) rem(0);
+		@media (min-width: $mobileSmall) {
+			min-width: rem(320);
+		}
+		@media (max-width: $mobileSmall) {
+			margin: rem(25) rem(0) rem(0) rem(0);
+		}
+	}
+	// .favorite__product-button
+	&__product-button {
+		margin: rem(25) rem(0) rem(0) rem(0);
+		width: 100%;
+		padding: rem(13) rem(23);
+		@media (max-width: $mobileSmall) {
+			margin: rem(25) rem(0) rem(0) rem(0);
+		}
+	}
+}

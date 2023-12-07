@@ -1,0 +1,33 @@
+[data-showmore] {
+}
+[data-showmore-content] {
+}
+[data-showmore-button] {
+	line-height: 145%;
+	color: rgba(29, 29, 29, 0.5);
+	width: 100%;
+	margin: rem(2) rem(0) rem(0) rem(0);
+	.showmore-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	span {
+		&:last-child {
+			display: none;
+		}
+		._showmore-active & {
+			display: none;
+			&:last-child {
+				display: block;
+			}
+		}
+	}
+}
+
+._showmore-active {
+	::before {
+		opacity: 0;
+		transition: 0.2s;
+	}
+}
