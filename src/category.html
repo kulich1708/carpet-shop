@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Ковры"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<div class="page category">
+			<div class="category__container">
+				<div class="category__breadcrumbs breadcrumbs">
+					<a href="index.html" class="breadcrumbs__link link">Главная</a>
+					<span>/</span>
+					<a href="index.html" class="breadcrumbs__link-current link">Ковры</a>
+				</div>
+				<div class="category__body">
+					<aside class="category__filter filter">
+						<div data-spollers class="filter__items spollers">
+							<div class="filter__item filter__item_header header-filter filter-item">
+								<div class="header-filter__info" data-da=".filter__items, 767.98, first">
+									<div class="header-filter__actions">
+										<p class="filter-item__title filter__title">Фильтры</p>
+										<i class="filter__close _icon-x"></i>
+										<button type="submit" class="header-filter__btn link">Сбросить</button>
+									</div>
+									<div class="header-filter__text">Найдено 55 товаров</div>
+								</div>
+								<div class="header-filter__category">
+									<div class="filter-item__title">Выберите категорию</div>
+									<div class="header-filter__checkbox checkbox">
+										<div class="checkbox__item">
+											<input id="category_1" data-error="Ошибка" class="checkbox__input"
+												type="checkbox" value="1" name="form[]" checked>
+											<label for="category_1" class="checkbox__label"><span
+													class="checkbox__text">Ковры</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="category_2" data-error="Ошибка" class="checkbox__input"
+												type="checkbox" value="1" name="form[]">
+											<label for="category_2" class="checkbox__label"><span
+													class="checkbox__text">Для ванной</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="category_3" data-error="Ошибка" class="checkbox__input"
+												type="checkbox" value="1" name="form[]">
+											<label for="category_3" class="checkbox__label"><span
+													class="checkbox__text">Коврики</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="category_4" data-error="Ошибка" class="checkbox__input"
+												type="checkbox" value="1" name="form[]">
+											<label for="category_4" class="checkbox__label"><span
+													class="checkbox__text">Дорожки</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="category_5" data-error="Ошибка" class="checkbox__input"
+												type="checkbox" value="1" name="form[]">
+											<label for="category_5" class="checkbox__label"><span
+													class="checkbox__text">Особенные ковры</span></label>
+										</div>
+									</div>
+								</div>
+								<div class="header-filter__price price-filter">
+									<div class="price-filter__header">
+										<p class="filter-item__title">Цена,</p>
+										<span class="filter-item__subtitle">тенге</span>
+									</div>
+									<div class="price-filter__body">
+										<div class="price-filter__slider"></div>
+										<div class="price-filter__inputs">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+												placeholder=""
+												class="input price-filter__input price-filter__input_first">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+												placeholder=""
+												class="input price-filter__input price-filter__input_last">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Страна</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="a_1" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="a_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Казахстан</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="a_2" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="a_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Турция</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="a_3" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="a_3" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Россия</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Размеры</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="b_1" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="b_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">150x230 см</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="b_2" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="b_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">200x300 см</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Материал</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="c_1" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="c_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Натуральные</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="c_2" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="c_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Искусственные</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Толщина</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="d_1" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="d_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">0,5 см</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="d_2" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="d_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">0,4 см</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Тип</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="e_1" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="e_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Безворсовые</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="e_2" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="e_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">С ворсом</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Форма</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="f_1" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="f_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Овальная</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="f_2" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="f_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Прямоугольная</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Стиль</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="g_1" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="g_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Новый</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="g_2" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="g_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Старый</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Производитель</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="h_1" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="h_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Казахстан</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="h_2" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="h_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Турция</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="h_3" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="h_3" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Россия</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spollers__item filter__item filter-item">
+								<button type="button" data-spoller class="spollers__title filter-item__header">
+									<p class="filter-item__title">Новинки и скидки</p>
+									<i class="filter-item__icon spoller-icon"></i>
+								</button>
+								<div class="spollers__body">
+									<div class="checkbox filter-item__checkbox">
+										<div class="checkbox__item">
+											<input id="i_1" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="i_1" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Новинки</span>
+											</label>
+										</div>
+										<div class="checkbox__item">
+											<input id="i_2" data-error="Ошибка"
+												class="checkbox__input filter-item__input" type="checkbox" value="1"
+												name="form[]">
+											<label for="i_2" class="checkbox__label filter-item__label">
+												<span class="checkbox__text filter-item__text">Cкидки</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<div class="category__main">
+						<h1 class="category__title title">Ковры</h1>
+						<div class="category__sort sort-category">
+							<div class="sort-category__title">Сортировать по:</div>
+							<ul class="sort-category__items">
+								<li class="sort-category__item link _active">Популярности</li>
+								<li class="sort-category__item link">Сначала дешевые</li>
+								<li class="sort-category__item link">Сначала дорогие</li>
+								<li class="sort-category__item link">По рейтингу</li>
+							</ul>
+						</div>
+						<div class="category__actions">
+							<div class="category__action action-category filter-action">
+								<div class="action-category__title">Фильтры</div>
+								<div class="action-category__body">
+									<div class="filter-action__subtitle"></div>
+									<i class="_icon-filter"></i>
+								</div>
+							</div>
+							<div class="category__action action-category sort-action">
+								<div class="action-category__title">Сортировка</div>
+								<div class="action-category__body">
+									<select name="form[]" class="form" data-show-selected
+										data-icon-class="sort-action__icon spoller-icon">
+										<option value="1" selected>По популярности
+										</option>
+										<option value="2">Сначала дешевые</option>
+										<option value="3">Сначала дорогие</option>
+										<option value="4">По рейтингу</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="category__products products">
+							<div class="products__items">
+								@@include('html/_categoryProduct.htm', {
+								"product_label": "Новинка",
+								"product_name": "Aster Q893A LVIZON LVIZON",
+								"product_link": "product.html",
+								"image_src": "img/products/04.jpg",
+								"image_alt": "Ковёр",
+								"characteristics_title1": "Размер",
+								"characteristics_subtitle1": "60x100",
+								"characteristics_title2": "Производитель",
+								"characteristics_subtitle2": "Казахстан",
+								"product_reviews_quant": "0",
+								"product_reviews_text": "Отзывов",
+								"product_price": "160.000",
+								"installment_price": "13.333",
+								"installment_time": "12",
+								"product_price_old": "",
+								"product_price_new": ""
+								})
+								@@include('html/_categoryProduct.htm', {
+								"product_label": "Новинка",
+								"product_name": "Aster Q893A LVIZON LVIZON",
+								"product_link": "product.html",
+								"image_src": "img/products/04.jpg",
+								"image_alt": "Ковёр",
+								"characteristics_title1": "Размер",
+								"characteristics_subtitle1": "60x100",
+								"characteristics_title2": "Производитель",
+								"characteristics_subtitle2": "Казахстан",
+								"product_reviews_quant": "0",
+								"product_reviews_text": "Отзывов",
+								"product_price": "160.000",
+								"installment_price": "13.333",
+								"installment_time": "12",
+								"product_price_old": "",
+								"product_price_new": ""
+								})
+								@@include('html/_categoryProduct.htm', {
+								"product_label": "Новинка",
+								"product_name": "Aster Q893A LVIZON LVIZON",
+								"product_link": "product.html",
+								"image_src": "img/products/04.jpg",
+								"image_alt": "Ковёр",
+								"characteristics_title1": "Размер",
+								"characteristics_subtitle1": "60x100",
+								"characteristics_title2": "Производитель",
+								"characteristics_subtitle2": "Казахстан",
+								"product_reviews_quant": "0",
+								"product_reviews_text": "Отзывов",
+								"product_price": "160.000",
+								"installment_price": "13.333",
+								"installment_time": "12",
+								"product_price_old": "",
+								"product_price_new": ""
+								})
+								@@include('html/_categoryProduct.htm', {
+								"product_label": "Новинка",
+								"product_name": "Aster Q893A LVIZON LVIZON",
+								"product_link": "product.html",
+								"image_src": "img/products/04.jpg",
+								"image_alt": "Ковёр",
+								"characteristics_title1": "Размер",
+								"characteristics_subtitle1": "60x100",
+								"characteristics_title2": "Производитель",
+								"characteristics_subtitle2": "Казахстан",
+								"product_reviews_quant": "0",
+								"product_reviews_text": "Отзывов",
+								"product_price": "160.000",
+								"installment_price": "13.333",
+								"installment_time": "12",
+								"product_price_old": "",
+								"product_price_new": ""
+								})
+							</div>
+							<button type="button" class="products__more button">
+								<span>Показать еще</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

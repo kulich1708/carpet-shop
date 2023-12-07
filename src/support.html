@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Центр поддержки"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<div class="page support">
+			<div class="support__container">
+				<div class="support__breadcrumbs breadcrumbs">
+					<a href="index.html" class="breadcrumbs__link link">Главная</a>
+					<span>/</span>
+					<a href="index.html" class="breadcrumbs__link-current link">
+						<i class="_icon-arrow"></i>Центр поддержки</a>
+				</div>
+			</div>
+
+			<div class="support__container support__container_mobile">
+				<div class="support__container">
+					<h1 class="support__title title">Центр поддержки</h1>
+				</div>
+				<div class="support__body">
+					<div class="support__item item-support">
+						<div class="item-support__body">
+							<div class="item-support__header">
+								<div class="item-support__imageblock">
+									<i class="_icon-delivery"></i>
+								</div>
+								<div class="item-support__title">Доставка</div>
+							</div>
+							<div class="item-support__text">
+								Регионы доставки в Казахстане. Сроки и условия. Стоимость доставки ковровых изделий.
+							</div>
+						</div>
+					</div>
+					<div class="support__item item-support">
+						<div class="item-support__body">
+							<div class="item-support__header">
+								<div class="item-support__imageblock">
+									<i class="_icon-payment"></i>
+								</div>
+								<div class="item-support__title">Оплата</div>
+							</div>
+							<div class="item-support__text">
+								Способы покупки. Информация об оплате. Ковры в рассрочку. Банки-партнеры.
+							</div>
+						</div>
+					</div>
+					<div class="support__item item-support">
+						<div class="item-support__body">
+							<div class="item-support__header">
+								<div class="item-support__imageblock">
+									<i class="_icon-return"></i>
+								</div>
+								<div class="item-support__title">Возвраты</div>
+							</div>
+							<div class="item-support__text">
+								Информация про возвраты. Как быстро вернуть товар? Товары не подлежащие возврату
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
